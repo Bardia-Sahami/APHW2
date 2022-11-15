@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/usr/src/app/src/main.cpp
+iostream
+-
+gtest/gtest.h
+-
+trie.h
+/usr/src/app/src/trie.h
+
+/usr/src/app/src/trie.cpp
+trie.h
+/usr/src/app/src/trie.h
+
+/usr/src/app/src/unit_test.cpp
+string
+-
+gtest/gtest.h
+/usr/src/app/src/gtest/gtest.h
+gmock/gmock.h
+/usr/src/app/src/gmock/gmock.h
+trie.h
+/usr/src/app/src/trie.h
+
+include/trie.h
+vector
+-
+string
+-
+iostream
+-
+functional
+-
+
